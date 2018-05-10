@@ -1,0 +1,7 @@
+.dockerignore
+.draft-tasks.toml
+.draftignore
+.draft.toml
+.env/
+__pycache__/
+charts/
