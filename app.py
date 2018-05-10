@@ -8,17 +8,16 @@ def hello_world():
 	ret_str_list = []
 	try:
 		login_name=os.getlogin()
+		ret_str_list.append("<b>name</b>: <pre>"+login_name+"</pre>")
 	except:
 		login_name="NA"
-	finally:
-		ret_str_list.append("<b>name</b>: <pre>"+login_name+"</pre>")
+
 	try:
 		host_name=socket.getfqdn()
 	except:
 		host_name="NA"
 	finally:
 		ret_str_list.append("<b>hostname</b>: <pre>" +host_name+"</pre>" )
-
 
 
 	for k in os.environ:
